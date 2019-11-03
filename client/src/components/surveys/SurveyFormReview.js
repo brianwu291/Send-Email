@@ -18,18 +18,18 @@ const SurveyFormReview = ({ onCancel, formValues, submitSurveys, history }) => {
 
   return (
     <div>
-      <h5>Please comfirm your entries</h5>
+      <h5>請確認您的內容</h5>
       {reviewFields}
       <button
         className="yellow white-text darken-3 btn-flat"
         onClick={onCancel}>
-        Back
+        上一步
       </button>
       <button
         className="green white-text btn-flat right"
         onClick={() => submitSurveys(formValues, history)}
       >
-        Send Survey
+        寄送問卷
         <i className="material-icons right">email</i>
       </button>
     </div>

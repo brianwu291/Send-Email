@@ -16,7 +16,7 @@ class Payments extends React.Component{
         stripeKey={process.env.REACT_APP_STRIPE_KEY}
       >
         <button className="btn cyan accent-4" style={{ borderRadius: '5px' }}>
-          Add Credits
+          增加點數
         </button>
       </StripeCheckout>
     );

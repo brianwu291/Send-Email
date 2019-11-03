@@ -22,17 +22,17 @@ class SurveyForm extends React.Component{
 
   render(){
     return (
-      <div>
+      <div style={{ "marginTop": "20px" }}>
         <form
           onSubmit={
             this.props.handleSubmit(this.props.onSurveySubmit)}>
           {this.renderFields()}
           <Link to="/surveys" className="red btn-flat white-text">
-            Cancel
+            取消
             <i className="material-icons right">cancel</i>
           </Link>
           <button type="submit" className="teal btn-flat right white-text">
-            Next
+            下一步
             <i className="material-icons right">done</i>
           </button>
         </form>

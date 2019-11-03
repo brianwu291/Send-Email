@@ -12,7 +12,7 @@ class Header extends React.Component {
       case false: // 接收到 false，表示 user 是登出狀態
         return(
           <li>
-            <a href="/auth/google">Google Login</a>
+            <a href="/auth/google">Google 登入</a>
           </li>
         );
       default: // 有接收到 /api/current_user 的資料，表示 user 是登入狀態
@@ -21,10 +21,10 @@ class Header extends React.Component {
             <Payments />
           </li>,
           <li key="3" style={{ marginLeft: '10px'}}>
-            Credits: {this.props.auth.credits}
+            點數: {this.props.auth.credits}
           </li>,
           <li key="2">
-            <a href="/api/logout">Logout</a>
+            <a href="/api/logout">登出</a>
           </li>
         ];
     }
@@ -39,7 +39,7 @@ class Header extends React.Component {
             to={this.props.auth ? '/surveys' : '/'}
             className="left brand-logo"
           >
-            Emaily
+            郵寄問卷
           </Link>
           <ul className="right">
             {this.renderContent()}

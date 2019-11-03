@@ -19,7 +19,7 @@ class SurveyLists extends React.Component{
               {survey.body}
             </p>
             <p className="right">
-              Sent On: {new Date(survey.dateSent).toLocaleDateString()}
+              Sent On: {` ${new Date(survey.dateSent).toLocaleDateString()}`}
             </p>
           </div>
           <div className="card-action">

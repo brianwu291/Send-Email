@@ -6,12 +6,12 @@ import './customcss/landing.css';
 const Landing = props => {
   return(
     <div className="landing-content">
-    	<h1>
-    		Emaily
-    	</h1>
-    	<h4>Create Survey And Send To Your Client!</h4>
+    	<h2>
+    	 	e-mail 問卷平台
+    	</h2>
+    	<h4>幫助您客制化專屬問卷!</h4>
       <Link to={props.auth ? '/surveys' : '/'}>
-      	{props.auth ? 'Click here To Start!' : 'Please Login'}
+      	{props.auth ? '點擊開始!' : '點擊右上角登入'}
       </Link>
     </div>
   );
