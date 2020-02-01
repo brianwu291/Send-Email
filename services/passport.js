@@ -31,10 +31,10 @@ passport.use(
     async (accessToken, refreshToken, profile, done) => {
       // accessToken: use to when user come back, access user info from google
       // refreshToken: use to refresh the accessToken
-
+      const googleId = profile._json.id
       // find if there is a user already exist
       // this is a async move(send something to database)
-      const existinguser = await User.findOne({ googleId: profile.id });
+      const existinguser = await User.findOne({ googleId });
       if (existinguser) {
         // already have the record with given user id, call done()
         return done(null, existinguser);
@@ -42,7 +42,7 @@ passport.use(
       // find nothing, create a new record
       // use User class to create an User instance(which is record in collection)
       // .save() means save these records into mongoDB
-      const newUser = await new User({ googleId: profile.id }).save();
+      const newUser = await new User({ googleId }).save();
       done(null, newUser);
   })
 );

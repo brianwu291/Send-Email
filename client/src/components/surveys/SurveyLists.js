@@ -23,8 +23,8 @@ class SurveyLists extends React.Component{
             </p>
           </div>
           <div className="card-action">
-            <a>Yes: {survey.yes}</a>
-            <a>No: {survey.no}</a>
+            <a href="https://emaily1201.herokuapp.com/">Yes: {survey.yes}</a>
+            <a href="https://emaily1201.herokuapp.com/">No: {survey.no}</a>
           </div>
         </div>
       );
