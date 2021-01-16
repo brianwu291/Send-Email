@@ -27,7 +27,7 @@
     "express": "^4.16.4",
     "localtunnel": "^2.0.1",
     "lodash": "^4.17.16",
-    "mongoose": ">=5.7.5",
+    "mongoose": ">=5.11.7",
     "nodemon": "^2.0.3",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
