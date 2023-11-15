@@ -34,7 +34,7 @@
     "path-parser": "^4.2.0",
     "sendgrid": "^5.2.3",
     "stripe": "^6.21.0",
-    "snyk": "^1.425.4"
+    "snyk": "^1.518.0"
   },
   "snyk": true
 }
