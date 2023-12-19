@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sendgrid/client": "^6.3.0",
+    "@sendgrid/client": "^7.0.0",
     "@sendgrid/helpers": "^6.3.0",
     "body-parser": "^1.18.3",
     "concurrently": "^5.0.1",
@@ -34,7 +34,7 @@
     "path-parser": "^4.2.0",
     "sendgrid": "^5.2.3",
     "stripe": "^6.21.0",
-    "snyk": "^1.425.4"
+    "snyk": "^1.996.0"
   },
   "snyk": true
 }
