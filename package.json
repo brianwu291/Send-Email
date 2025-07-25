@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sendgrid/client": "^6.3.0",
+    "@sendgrid/client": "^7.0.0",
     "@sendgrid/helpers": "^6.3.0",
     "body-parser": "^1.18.3",
     "concurrently": "^5.0.1",
